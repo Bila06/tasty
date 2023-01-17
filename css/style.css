@@ -16,7 +16,7 @@ body {
   font-size: 18px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.3);
-  background: #000 url(../images/broken_noise.png) repeat;
+  background: grey   ;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
@@ -92,16 +92,19 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-nav {
   position: fixed;
-  width: 100%;
+  width: 165px;
+    height: 100%;
   left: 0;
-  right: 0;
-  background: transparent;
-  z-index: 1001;
   top: 0;
-  padding: 14px 0;
-  -webkit-transition: 0.3s;
+  background: rgba(0, 0, 0, 0.5);;
+  z-index: 1;
+  top: 0;
+  
+ /* -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  
+
 }
 @media screen and (max-width: 480px) {
   .fh5co-nav {
@@ -109,19 +112,20 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav.scrolled {
-  background: #000 url(../images/broken_noise.png) repeat;
+  background: #00000000 ;
   top: -82px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fh5co-nav.scrolled {
-    background: #000 url(../images/broken_noise.png) repeat;
+    background: #00000000;
   }
 }
 @media screen and (max-width: 480px) {
   .fh5co-nav.scrolled {
     background: transparent;
   }
-}
+}*/}
+/*
 .fh5co-nav #fh5co-logo {
   font-size: 32px;
   margin: 0;
@@ -130,33 +134,56 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Cormorant Garamond", Georgia, serif;
   color: #fff !important;
 }
+*/
+/*
 .scrolled .fh5co-nav #fh5co-logo {
   color: #000 !important;
 }
+*/
 .fh5co-nav #fh5co-logo a {
   font-size: 42px;
   color: #fff !important;
 }
+/*
 .scrolled .fh5co-nav #fh5co-logo a {
   color: #000 !important;
 }
+*/
+/*
 .fh5co-nav #fh5co-logo a span {
   color: #ea272d;
 }
+*/
+/*
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
     display: none;
   }
-}
+*/
+/*
 .fh5co-nav ul {
   padding: 0;
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 0;*/
+.img {
+  width: 10px;
+  height: 10px;
+  background: red;
+  position: relative;
+  animation: mymove 3s infinite;
+  float:left;
+  margin:100px;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 600px;}
 }
 .fh5co-nav ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline;
+
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+
 }
 .fh5co-nav ul li > a {
   text-transform: uppercase;
@@ -164,7 +191,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 14px;
 }
 .fh5co-nav ul li a {
-  padding: 30px 15px;
+
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1773,7 +1800,7 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
-  .col-xxs-12 {
+  .col-xs-12 {
     float: none;
     width: 100%;
   }
